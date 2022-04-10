@@ -1,0 +1,9 @@
+#!/bin/bash
+
+gradle clean
+gradle install
+cd app/build/install
+mv app wl3
+zip -r wl3 wl3
+rm dist/wl3.zip
+mv wl3.zip ../../../dist/
